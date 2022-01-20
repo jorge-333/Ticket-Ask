@@ -1,0 +1,668 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: #FFFFFF;
+  margin: 0;
+}
+
+.sidebar{
+  position: fixed;
+  height: 100%;
+  width: 240px;
+  background: #0A2558;
+  transition: all 0.5s ease;
+}
+.sidebar.active{
+  width: 60px;
+}
+.sidebar .logo-details{
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.sidebar .logo-details i{
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  min-width: 60px;
+  text-align: center
+}
+.sidebar .logo-details .logo_name{
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+}
+.sidebar .nav-links{
+  margin-top: 10px;
+}
+.sidebar .nav-links li{
+  position: relative;
+  list-style: none;
+  height: 50px;
+}
+.sidebar .nav-links li a{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.nav-links li a:hover{
+  background: #081D45;
+}
+.sidebar .nav-links li i{
+  min-width: 60px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+.sidebar .nav-links li a .links_name{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.sidebar .nav-links .log_out{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.home-section{
+  position: relative;
+  background: #f5f5f5;
+  min-height: 100vh;
+  width: calc(100% - 240px);
+  left: 240px;
+  transition: all 0.5s ease;
+}
+.sidebar.active ~ .home-section{
+  width: calc(100% - 60px);
+  left: 60px;
+}
+.home-section nav{
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: calc(100% - 240px);
+  left: 240px;
+  z-index: 100;
+  padding: 0 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+.sidebar.active ~ .home-section nav{
+  left: 60px;
+  width: calc(100% - 60px);
+}
+.home-section nav .sidebar-button{
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+nav .sidebar-button i{
+  font-size: 35px;
+  margin-right: 10px;
+}
+.home-section nav .search-box{
+  position: relative;
+  height: 50px;
+  max-width: 550px;
+  width: 100%;
+  margin: 0 20px;
+}
+nav .search-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  background: #F5F6FA;
+  border: 2px solid #EFEEF1;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 0 15px;
+}
+nav .search-box .bx-search{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: #2697FF;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 4px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  transition: all 0.4 ease;
+}
+.home-section nav .profile-details{
+  display: flex;
+  align-items: center;
+  background: #F5F6FA;
+  border: 2px solid #EFEEF1;
+  border-radius: 6px;
+  height: 50px;
+  min-width: 190px;
+  padding: 0 15px 0 2px;
+}
+nav .profile-details img{
+  height: 40px;
+  width: 40px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+nav .profile-details .admin_name{
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin: 0 10px;
+  white-space: nowrap;
+}
+nav .profile-details i{
+  font-size: 25px;
+  color: #333;
+}
+
+.content {
+  margin: 0 auto 0 50px;
+  padding: 25px 25px 25px 50px;
+}
+
+.content h2 {
+  padding: 100px 25px 25px 25px;
+  font-size: 22px;
+  font-weight: 600;
+  border-bottom: 0.5px solid #ebebeb;
+  color: #767a84;
+}
+
+.btns {
+  display: flex;
+}
+
+.btns .btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #407cb9;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  padding: 10px 15px;
+  margin: 15px 10px 15px 0;
+}
+
+.btns .btn:hover {
+  background-color: #396fa6;
+}
+
+.btns .btn.red {
+  background-color: #b63838;
+}
+
+.btns .btn.red:hover {
+  background-color: #a33232;
+}
+
+.home .tickets-links {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: nowrap;
+  padding-top: 104px;
+}
+
+.home .tickets-links a {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+}
+
+.home .tickets-links a i {
+  position: absolute;
+  z-index: 0;
+}
+
+.home .tickets-links a .title {
+  color: #fff;
+  z-index: 1;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.home .tickets-links a .num {
+  color: #fff;
+  z-index: 1;
+  font-size: 40px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.home .tickets-links a.open {
+  background-color: #B0DEDC;
+}
+
+.home .tickets-links a.open i {
+  color: #96BAB9;
+}
+
+.home .tickets-links a.open:hover {
+  background-color: #AED8D7;
+}
+
+.home .tickets-links a.resolved {
+  background-color: #6AE086;
+}
+
+.home .tickets-links a.resolved i {
+  color: #62C87A;
+}
+
+.home .tickets-links a.resolved:hover {
+  background-color: #68D782;
+}
+
+.home .tickets-links a.closed {
+  background-color: #C2C2C2;
+}
+
+.home .tickets-links a.closed i {
+  color: #9C9C9C;
+}
+
+.home .tickets-links a.closed:hover {
+  background-color: #BABABA;
+}
+
+.home .new {
+  padding-top: 60px;
+}
+
+.tickets .tickets-list, .home .tickets-list {
+  display: flex;
+  flex-flow: column;
+}
+
+.tickets .tickets-list .ticket, .home .tickets-list .ticket {
+  padding: 15px 0;
+  width: 100%;
+  border-bottom: 1px solid #ebebeb;
+  display: flex;
+  text-decoration: none;
+}
+
+.tickets .tickets-list .ticket .con, .home .tickets-list .ticket .con {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.tickets .tickets-list .ticket .con2, .home .tickets-list .ticket .con2 {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  align-items: flex-end;
+}
+
+.tickets .tickets-list .ticket i, .home .tickets-list .ticket i {
+  text-align: center;
+  width: 80px;
+  color: #b3b3b3;
+}
+
+.tickets .tickets-list .ticket .title, .home .tickets-list .ticket .title {
+  font-weight: 600;
+  color: #666666;
+}
+
+.tickets .tickets-list .ticket .msg, .home .tickets-list .ticket .msg {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 400px;
+  color: #999999;
+  font-size: 14px;
+}
+
+.tickets .tickets-list .ticket .created, .home .tickets-list .ticket .created {
+  flex-grow: 1;
+  align-items: flex-end;
+  color: #999999;
+  font-size: 14px;
+}
+
+.tickets .tickets-list .ticket .priority, .home .tickets-list .ticket .priority {
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.tickets .tickets-list .ticket .priority.low, .home .tickets-list .ticket .priority.low {
+  color: #38b673;
+}
+
+.tickets .tickets-list .ticket .priority.medium, .home .tickets-list .ticket .priority.medium {
+  color: #dea200;
+}
+
+.tickets .tickets-list .ticket .priority.high, .home .tickets-list .ticket .priority.high {
+  color: #b63838;
+}
+
+.tickets .tickets-list .ticket:last-child, .home .tickets-list .ticket:last-child {
+  border-bottom: 0;
+}
+
+.tickets .tickets-list .ticket:hover, .home .tickets-list .ticket:hover {
+  background-color: #fcfcfc;
+}
+
+.tickets form, .home form {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-between;
+}
+
+.tickets form select, .tickets form input, .home form select, .home form input {
+  border: 1px solid #cccccc;
+  padding: 6px 8px;
+  margin-left: 10px;
+}
+
+.tickets form select, .home form select {
+  margin-right: 15px;
+}
+
+.tickets .pagination, .home .pagination {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0 40px 0;
+}
+
+.tickets .pagination a, .home .pagination a {
+  display: flex;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  font-weight: 600;
+  background-color: #f2f2f2;
+  color: #999999;
+}
+
+.tickets .pagination a:hover, .home .pagination a:hover {
+  background-color: #ebebeb;
+}
+
+.view h2 span {
+  font-weight: 700;
+}
+
+.view h2 .open {
+  color: #aeaeae;
+}
+
+.view h2 .resolved {
+  color: #38b673;
+}
+
+.view h2 .closed {
+  color: #b63838;
+}
+
+.view .ticket {
+  padding: 20px 0;
+}
+
+.view .ticket .priority {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.view .ticket .priority.low {
+  color: #38b673;
+}
+
+.view .ticket .priority.medium {
+  color: #dea200;
+}
+
+.view .ticket .priority.high {
+  color: #b63838;
+}
+
+.view .ticket .sep {
+  padding: 0 5px;
+}
+
+.view .ticket .category {
+  color: gray;
+}
+
+.view .ticket .created {
+  display: flex;
+  color: gray;
+  justify-content: flex-end;
+  flex-grow: 0.5;
+}
+
+.view .ticket div {
+  display: flex;
+}
+
+.view .uploads {
+  display: flex;
+}
+
+.view .uploads a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.view .uploads a:hover {
+  opacity: 0.9;
+}
+
+.view .comments {
+  margin-top: 15px;
+  border-top: 1px solid #ebebeb;
+  padding: 25px 0;
+}
+
+.view .comments .comment {
+  display: flex;
+  padding-bottom: 5px;
+}
+
+.view .comments .comment div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 70px;
+  color: #e6e6e6;
+  transform: scaleX(-1);
+}
+
+.view .comments .comment p {
+  margin: 0 0 20px 0;
+}
+
+.view .comments .comment p .header {
+  display: flex;
+  padding-bottom: 5px;
+}
+
+.view .comments .comment p .header .name, .view .comments .comment p .header .date {
+  font-size: 14px;
+  color: gray;
+}
+
+.view .comments .comment p .header .name {
+  font-weight: 600;
+  padding-right: 10px;
+  color: #0058ba;
+}
+
+.view .comments .comment p .header .name.is-admin {
+  color: #b94040;
+}
+
+.update form, .view form {
+  padding: 15px 0;
+  display: flex;
+  flex-flow: column;
+  width: 400px;
+}
+
+.update form .wrap, .view form .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.update form .wrap label, .update form .wrap select, .view form .wrap label, .view form .wrap select {
+  width: 47%;
+  margin-right: 0;
+}
+
+.update form .wrap label:first-child, .update form .wrap select:first-child, .view form .wrap label:first-child, .view form .wrap select:first-child {
+  padding-right: 15px;
+}
+
+.update form label, .view form label {
+  display: inline-flex;
+  width: 100%;
+  padding: 10px 0;
+  margin-right: 25px;
+}
+
+.update form input, .update form textarea, .update form select, .view form input, .view form textarea, .view form select {
+  padding: 10px;
+  width: 100%;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+}
+
+.update form textarea, .view form textarea {
+  height: 200px;
+}
+
+.update form input[type="submit"], .view form input[type="submit"] {
+  display: block;
+  background-color: #407cb9;
+  border: 0;
+  font-weight: bold;
+  font-size: 14px;
+  color: #FFFFFF;
+  cursor: pointer;
+  width: 200px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+.update form input[type="submit"]:hover, .view form input[type="submit"]:hover {
+  background-color: #396fa6;
+}
+
+.login {
+  display: flex;
+  padding-top: 40px;
+}
+
+.login .con {
+  flex-basis: 50%;
+}
+
+.login .con:last-child {
+  padding-left: 50px;
+  border-left: 1px solid #f2f2f2;
+}
+
+.login h2 {
+  padding-top: 104px;
+  border: 0;
+}
+/* Responsive Media Query */
+@media screen and (max-width: 1000px) {
+  .sidebar{
+    width: 60px;
+  }
+  .sidebar.active{
+    width: 220px;
+  }
+  .home-section{
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .sidebar.active ~ .home-section{
+    /* width: calc(100% - 220px); */
+    overflow: hidden;
+    left: 220px;
+  }
+  .home-section nav{
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .sidebar.active ~ .home-section nav{
+    width: calc(100% - 220px);
+    left: 220px;
+  }
+  .content {
+    padding: 10px;
+    width: 100%;
+  }
+  .responsive-width-100 {
+    width: 100%;
+    max-width: 100%;
+  }
+  .responsive-hidden {
+    display: none;
+  }
+  .tickets form, .home form, .login form {
+    width: 100%;
+    flex-flow: column;
+  }
+  .tickets form select, .tickets form input, .home form select, .home form input, .login form select, .login form input {
+    margin: 10px 0;
+  }
+  .tickets form div, .home form div, .login form div {
+    display: flex;
+    flex-flow: column;
+  }
+  .tickets .tickets-links, .home .tickets-links, .login .tickets-links {
+    flex-flow: column;
+  }
+  .tickets .tickets-links a, .home .tickets-links a, .login .tickets-links a {
+    margin-bottom: 10px;
+  }
+  .login {
+    flex-flow: column;
+  }
+  .login .con {
+    flex-basis: 100%;
+  }
+  .login .con:last-child {
+    padding-left: 0;
+    border-left: none;
+  }
+}
