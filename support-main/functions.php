@@ -33,7 +33,8 @@ if (isset($_SESSION['customer_logged_in'])) {
 /* This is the template header we can use to keep the header consistent across all pages */
 function template_header($title) {
 	$login_link = isset($_SESSION['customer_logged_in']) ? '<a href="logout.php"><i class="bx bx-log-out"></i><span class="links_name">Log out</span></a>' : '<a href="login.php"><i class="bx bx-log-in"></i><span>Login</span></a>';
-	
+	$notifications_link = isset($_SESSION['customer_logged_in']) ? '<a href="notifications.php"><i class="fas fa-bell"></i><span class="links_name">Notifications(' . strval($notification_count) .')</span></a>' : '';
+
 echo <<<EOT
 <!DOCTYPE html>
 <html>
@@ -58,6 +59,9 @@ echo <<<EOT
             				<span class="links_name">Dashboard</span>
           				</a>
         			</li>
+				<li>
+					$notifications_link
+				</li>
         			<li>
 						<a href="create.php">
 							<i class='bx bxs-coupon'></i>
