@@ -5,14 +5,14 @@ ASU - Senior Capstone Project
 ### Table of Contents
 - [Project Charter](#Project-Charter)
 - [Functions & Requirements](#Business-Requirements)
-    1. [Client and Employee Web Portal](#Client-and-Employee-Web-Portal)
-    2. [Ticket Management](#Ticket-Management)
-    3. [Alert System](#Alert-System)
-    4. [File Upload](#File-Upload)
+   1. [Client and Employee Web Portal](#Client-and-Employee-Web-Portal)
+   2. [Ticket Management](#Ticket-Management)
+   3. [Alert System](#Alert-System)
+   4. [File Upload](#File-Upload)
 - [System Design](#System-Design)
-    * [Network Topology Diagram](#Network-Topology-Diagram)
-    * [Entity-Relationship diagram](#Entity-Relationship-Diagram)
-    * [Security and Privacy Architecture](#Security-and-Privacy-Architecture)
+   * [Network Topology Diagram](#Network-Topology-Diagram)
+   * [Entity-Relationship Diagram](#Entity-Relationship-Diagram)
+   * [Security and Privacy Architecture](#Security-and-Privacy-Architecture)
 
 
 ### Project Charter
@@ -46,8 +46,9 @@ TicketAsk is a helpdesk system that offers a Customer and Employee Portal that m
   - The system will allow the customer to delete uploaded files.
   - The system will display an error message for unsupported file types.
   - The system will display an error message for files that are too large.
-
 ### System Design
 #### Network Topology Diagram
-#### Entity-Relationship diagram
-#### Security and Privacy Architecture
+<img src="Screenshots/network.png" width="100%">
+#### Entity-Relationship Diagram
+<img src="Screenshots/uml.png" width="100%">
+
