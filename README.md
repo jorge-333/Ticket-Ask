@@ -2,9 +2,9 @@
 ASU - Senior Capstone Project
 
 
-## Table of Contents
+### Table of Contents
 1. [Project Charter](#Project-Charter)
-2. [Functions & Requirements]
+2. [Functions & Requirements](#Business-Requirements)
   * [Client and Employee Web Portal] 
   * [Ticket Management]
   * [Alert System]
