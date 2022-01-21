@@ -22,6 +22,7 @@ TicketAsk is a helpdesk system that offers a Customer and Employee Portal that m
 
 #### Client and Employee Web Portal
 <img src="Screenshots/wireframe.png" width="100%">
+
 #### Ticket Management
 * Requirements:
   - The system will allow the user to open a new ticket.
@@ -31,12 +32,14 @@ TicketAsk is a helpdesk system that offers a Customer and Employee Portal that m
   - The system will allow agents to request additional information on tickets.
   - The system will retain all past tickets.
   - The system will allow the user to filter and search through past and current tickets.
+
 #### Alert System
 * Requirements:
   - The system will alert the customer when their ticket has been completed and closed.
   - The system will alert the customer when a request for more information has been made.
   - The system will alert the customer when any partial work has been done on their ticket.
   - The system will alert the customer when a new technician or agent has been assigned to their ticket.
+
 #### File Upload
 * Requirements:
   - The system will allow the customer to upload .docx files.
@@ -50,8 +53,8 @@ TicketAsk is a helpdesk system that offers a Customer and Employee Portal that m
 ### System Design
 
 #### Network Topology Diagram
-<img src="Screenshots/network.png" width="100%">
+<img src="Screenshots/network.png" width="50%">
 
 #### Entity-Relationship Diagram
-<img src="Screenshots/uml.png" width="100%">
+<img src="Screenshots/uml.png" width="50%">
 
