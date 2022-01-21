@@ -21,4 +21,4 @@ Programming
 References
 
 
-<img src="Screenshots/wireframe.png" width="100%" title="Intro Card" alt="Intro Card">
+<img src="Screenshots/wireframe.png" width="100%">
