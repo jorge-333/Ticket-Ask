@@ -49,8 +49,8 @@ TicketAsk is a helpdesk system that offers a Customer and Employee Portal that m
 ### System Design
 
 #### Network Topology Diagram
-<img src="Screenshots/network.png" width="50%">
+<img align="center" src="Screenshots/network.png" width="70%">
 
 #### Entity-Relationship Diagram
-<img src="Screenshots/uml.png" width="50%">
+<img align="center" src="Screenshots/uml.png" width="70%">
 
