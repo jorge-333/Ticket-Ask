@@ -46,9 +46,12 @@ TicketAsk is a helpdesk system that offers a Customer and Employee Portal that m
   - The system will allow the customer to delete uploaded files.
   - The system will display an error message for unsupported file types.
   - The system will display an error message for files that are too large.
+ 
 ### System Design
+
 #### Network Topology Diagram
 <img src="Screenshots/network.png" width="100%">
+
 #### Entity-Relationship Diagram
 <img src="Screenshots/uml.png" width="100%">
 
