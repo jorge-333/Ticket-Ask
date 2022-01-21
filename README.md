@@ -19,3 +19,6 @@ Figure 5. Entity-Relationship diagram
 Security and Privacy Architecture
 Programming
 References
+
+
+<img src="Screenshots/wireframe.png" width="100%" title="Intro Card" alt="Intro Card">
