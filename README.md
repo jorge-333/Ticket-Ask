@@ -5,14 +5,13 @@ ASU - Senior Capstone Project
 ### Table of Contents
 - [Project Charter](#Project-Charter)
 - [Functions & Requirements](#Business-Requirements)
-   1. [Client and Employee Web Portal](#Client-and-Employee-Web-Portal)
-   2. [Ticket Management](#Ticket-Management)
-   3. [Alert System](#Alert-System)
-   4. [File Upload](#File-Upload)
+   * [1. Client and Employee Web Portal](#Client-and-Employee-Web-Portal)
+   * [2. Ticket Management](#Ticket-Management)
+   * [3. Notification/Alert System](#Notification/Alert-System)
+   * [4. File Upload](#File-Upload)
 - [System Design](#System-Design)
    * [Network Topology Diagram](#Network-Topology-Diagram)
    * [Entity-Relationship Diagram](#Entity-Relationship-Diagram)
-   * [Security and Privacy Architecture](#Security-and-Privacy-Architecture)
 
 
 ### Project Charter
@@ -20,10 +19,10 @@ TicketAsk is a helpdesk system that offers a Customer and Employee Portal that m
 
 ### Business Requirements
 
-#### Client and Employee Web Portal
+#### 1. Client and Employee Web Portal
 <img src="Screenshots/wireframe.png" width="100%">
 
-#### Ticket Management
+#### 2. Ticket Management
 * Requirements:
   - The system will allow the user to open a new ticket.
   - The system will allow the user to edit an existing ticket.
@@ -33,14 +32,14 @@ TicketAsk is a helpdesk system that offers a Customer and Employee Portal that m
   - The system will retain all past tickets.
   - The system will allow the user to filter and search through past and current tickets.
 
-#### Alert System
+#### 3. Notification/Alert System
 * Requirements:
   - The system will alert the customer when their ticket has been completed and closed.
   - The system will alert the customer when a request for more information has been made.
   - The system will alert the customer when any partial work has been done on their ticket.
   - The system will alert the customer when a new technician or agent has been assigned to their ticket.
 
-#### File Upload
+#### 4. File Upload
 * Requirements:
   - The system will allow the customer to upload .docx files.
   - The system will allow the customer to upload .pdf files.
