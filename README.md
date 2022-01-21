@@ -4,11 +4,12 @@ ASU - Senior Capstone Project
 
 ## Table of Contents
 1. [Project Charter](#Project-Charter)
-  * [Problem Statement]
-  * [Technology Solution]
-  * [Project Benefits]
-2. [Business Requirements]
-  * [Functions and Requirements]
+2. [Functions & Requirements]
+  * [Client and Employee Web Portal] 
+  * [Ticket Management]
+  * [Messaging System]
+  * [Alert System]
+  * [File Upload]
 3. [System Design]
   * [User Interface - Wireframes]
 4. [Infrastructure Architecture]
@@ -18,6 +19,41 @@ ASU - Senior Capstone Project
 6. [Security and Privacy Architecture]
 7. [Programming]
 
+### Project Charter
+TicketAsk is a helpdesk system that offers a Customer and Employee Portal that meets the necessary requirements needed to have the main functions to manage tickets be notified of ticket progress and communicate back and forth with the support team until ticked is resolved.
 
-
+### Business Requirements
+#### Client and Employee Web Portal
 <img src="Screenshots/wireframe.png" width="100%">
+
+#### Ticket Management
+Requirements
+o The system will allow the user to open a new ticket.
+o The system will allow the user to edit an existing ticket.
+o The system will allow the user to close a fulfilled or resolved ticket. o The system will allow the user to view the status of open tickets.
+o The system will allow agents to request additional information on
+tickets.
+o The system will retain all past tickets.
+o The system will allow the user to filter and search through past and
+current tickets.
+#### Messaging System
+Requirements
+o The system will allow real-time messaging during business hours. o The system will allow the customer to start a chat with a live agent. o The system will display estimated wait times.
+o The system will allow a ticket to be created from real-time
+messaging support.
+o The system will save transcripts of real-time messaging support.
+o The system will allow the live chat to be transferred to a technician.
+#### Alert System
+Requirements
+o The system will alert the customer when their ticket has been completed and closed.
+o The system will alert the customer when a request for more information has been made.
+o The system will alert the customer when any partial work has been done on their ticket.
+o The system will alert the customer when a new technician or agent has been assigned to their ticket.
+#### File Upload
+Requirements
+o The system will allow the customer to upload .docx files.
+o The system will allow the customer to upload .pdf files.
+o The system will allow the customer to upload .jpeg and .png files.
+o The system will allow the customer to upload .zip files.
+o The system will allow the customer to delete uploaded files.
+o The system will display an error message for unsupported file types. o The system will display an error message for files that are too large.
